@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/style.css" />
+  <title>Details Page</title>
+</head>
+
+<body>
+  <section class="section">
+    <nav>
+      <ul>
+        <li>RMBD</li>
+        <li>BROWSE BY GENRE</li>
+        <li>BROWSE BY YEAR</li>
+      </ul>
+    </nav>
+    <section class="section">
+      <div class="container-wrap"
+      style="background: #000, url('<%= imgURL %><%= movieData.backdrop_path %>') center no-repeat; background-size: cover;">
+        
+        <div class="conteiner">
+          <img class="card-img-top" style="height: 500px; object-fit: cover"
+            src="<%= imgURL %><%= movieData.poster_path %>" alt="Card image cap" />
+
+            <div class="card-body">
+              <h2 class="card-title"><%= movieData.original_title %></h2>
+              <button class="btn">2021</button>
+              <button class="btn">Action</button>
+              <button class="btn">Adventure</button>
+              <button class="btn">Comedy</button>
+              <button class="btn">Fantasy</button>
+              <p class="card-text"><%= movieData.original_title %></p>
+              <p class="card-text"><%= movieData.budget %></p>
+              
+            <p class="card-text">
+              <%= movieData.budget %>
+            </p>
+            <p class="card-text">
+              <small class="text-muted">
+                <%= movieData.release_date %>
+              </small>
+            </p>
+            <p class="card-text">
+              Vote average:<small class="text-muted">
+                <%= movieData.vote_average %>
+              </small>
+            </p>
+            <p class="movie-quick-info">
+              <span class="movie-quick-info-span">
+                <%= movieData.runtime/60 %>
+              </span>
+            </p>
+            <div class="card__rating">
+              <span class="movie-quick-info-span">
+                <%= movieData.vote_average %>
+              </span>
+
+            </div>
+            <button class="btn">Play Trailer</button>
+            <h3 class="subject-heading">Storyline</h3>
+            <p>
+              <%= movieData.tagline %>
+            </p>
+
+            <p>
+              <%= movieData.overview %>
+            </p>
+
+            <p>
+              <%= movieData.popularity %>
+            </p>
+
+            <p>
+              <%= movieData.popularity %>
+            </p>
+            
+    </section>
+    <section class="section">
+      <div class="column-3-tablet">
+        <h1 class="Movie-Cast">MOVIE CAST</h1>
+        <div class="actor-thumbnail-block"></div>
+        <a href="https://iftee.github.io/react-movie-database/actor/56446">
+          <img src="https://image.tmdb.org/t/p/w342/be1bVF7qGX91a6c5WeRPs5pKXln.jpg" alt="Idris Elba"
+            class="actor-thumbnail-image"></a>
+        <a href="https://iftee.github.io/react-movie-database/actor/56446">
+          <img src="https://image.tmdb.org/t/p/w342/euDPyqLnuwaWMHajcU3oZ9uZezR.jpg" alt="Idris Elba"
+            class="actor-thumbnail-image"></a>
+      </div>
+
+      <div class="movie-more-info">
+        <h4 class="subject-heading">TMDB User Score</h4>
+        <p>
+          <%= movieData.vote_count %>
+        </p>
+        <h4 class="subject-heading">release_date</h4>
+        <p><%= movieData.release_date %></p>
+        <h4 class="subject-heading">budget</h4>
+        <p><%= movieData.budget %></p>
+        <h4 class="subject-heading">revenue</h4>
+        <p><%= movieData.revenue %></p>
+        <h4 class="subject-heading">original_language</h4>
+        <p><%= movieData.original_language %></p>
+        <h4 class="subject-heading">More Information</h4>
+        <a class="external-link" href="https://www.imdb.com/title/tt6334354/" target="_blank"
+          rel="noopener noreferrer">IMDB</a> <br>
+        <a class="external-link" href="https://www.themoviedb.org/movie/436969/" target="_blank"
+          rel="noopener noreferrer">TMDB</a> <br>
+        <a class="external-link" href="https://www.thesuicidesquad.net/" target="_blank"
+          rel="noopener noreferrer">Offical Website</a>
+      </div>
+
+    </section>
+    <div class="footer">
+      <div class="container">
+        <div class="columns is-multiline">
+          <div class="column">
+            <a href="https://www.themoviedb.org/" target="_blank" rel="noopener noreferrer">
+              <img src="https://iftee.github.io/react-movie-database/static/media/PoweredByRectangle_Green.27b65cb4.svg"
+                alt="Powered by The Movie DB">
+            </a>
+            <p>A React based project to discover movies using TMDB API.</p>
+            <p>
+              "View repository on"
+              <a href="https://github.com/iftee/react-movie-database" target="_blank" rel="_blank">GitHub</a>
+
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+</body>
+
+</html>

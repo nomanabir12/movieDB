@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    background:rgb(18, 18, 41);
+    color: aliceblue;
+}
+ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+li{
+    text-decoration: none;
+    padding: 20px;
+    margin: 0px;
+}
+.container-wrap{
+    background-color: rgb(179, 26, 26);
+    padding:30px 0px;
+    display: flex;
+    justify-content: center;
+    background: url(https://image.tmdb.org/t/p/original/8s4h9friP6Ci3adRGahHARVd76E.jpg) center no-repeat #521d0dcc;
+    background-blend-mode: multiply;
+    background-size: cover;
+    opacity: 1;
+    width: 100%;
+
+    /* background-image: url(https://initiate.alphacoders.com/images/116/cropped-1920-1080-1165361.jpg?6244); */
+    /* background-position: center center; */
+    /* transition: background-color .3s ease-in 0s; */
+    /* background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    /* -webkit-filter: blur(10px);
+    -moz-filter:blur(10px); */ 
+}
+
+
+img{
+    border-radius: 15px;    
+}
+.conteiner{
+    width: 70%;
+    display: flex;
+    padding: 10px;
+}
+.card-body{
+    margin:0px 20px;
+}
+.card-title{
+    font-size: 60px;
+    color: white;  
+    letter-spacing: 2px; 
+}
+.first-btn{
+    width:60px;
+    background-color:red;
+    border: none;
+    padding:7px 5px;
+    margin-right: 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    color:white;
+}
+.btn{
+    width:80px;
+    background-color:red;
+    border: none;
+    padding:7px 5px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    color:white;
+}
+
+.footer{
+    background-color: #1a1824;
+    padding-bottom: 3rem;
+    text-align: center;
+    border-bottom: 5px solid #dc2d43;
+}
+.footer img{
+    width: auto;
+    height: auto;
+    max-width: 160px;
+}
+.container{
+    flex-grow: 1;
+    margin: 0 auto;
+    position: relative;
+    width: auto;
+}
+.columns.is-multiline{
+    flex-wrap: wrap;
+}
+.column{
+    display: block;
+    flex-basis: 0;
+    flex-grow: 1;
+    flex-shrink: 1;
+    padding: .75rem;
+}
+a, #root a:hover{
+    color: #dc2d43;
+}
+p{
+    color: white;
+}
+.subject-heading{
+    color: white;
+}
+a,a:hover{
+    color: blue;
+    font-size: larger;
+}
+.section{
+    background-color: grey;
+}
+.card__rating{
+    display: inline-block;
+    position: relative;
+    padding: 1rem;
+    margin-left: 3rem;
+    color: #fff;
+    border-radius: 50%;
+    border: 3px solid color-primary;
+    
+}
+/* .movie-more-info{
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px;
+}   */
+
+
+
